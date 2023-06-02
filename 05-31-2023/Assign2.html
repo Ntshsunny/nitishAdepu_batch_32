@@ -9,7 +9,7 @@
              //var environment = 'dev';
              //var amount= 1000;
         //function calAmt(environment){ 
-
+            console.log("using if - else statements")
              if (environment == 'dev')
              {
                  amount = amount*1.1;
@@ -35,9 +35,18 @@
                 console.log("enter the string value");
             }
         //}
-        
-        //calAmt(environment);
-        //console.log("Your environment is "+environment+ "and amount is" +amount);
+            console.log("using switch condition")
+            switch(environment){
+                case 'dev' : amount = amount*1.1;
+                break;
+                case 'test' : amount = amount*1.2;
+                break;
+                case 'stg' : amount = amount*1.3;
+                break;
+                case 'prd' : amount = amount*1.05;
+                break;
+            }
+            console.log("Expected Amount is :" +amount);
 
 
         </script>
