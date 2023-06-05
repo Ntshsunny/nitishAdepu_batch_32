@@ -1,0 +1,35 @@
+<html>
+    
+       <body> 
+        <h1>Hobbies</h1>
+        <script>
+
+            function getHobbies() {
+                hobbies = ["Cricket", "vollyball", "reading", "Travelling", "cooking"];
+                return hobbies;
+            }
+
+            myHobbies = getHobbies();
+            console.log(myHobbies);
+
+            function addHobbies(hobby) {
+                hobbies.push(hobby);
+            }
+            addHobbies("music");
+            console.log(myHobbies);
+
+            function delHobbies(hobby)
+            {
+                index = hobbies.indexOf(hobby);
+                if(index >= -1){
+                    hobbies.splice(index, 1);
+                }
+                else
+                console.log("The hobby is not in list")
+            }
+            delHobbies("music");
+            console.log(myHobbies);
+
+</script>
+    </body>
+</html>
